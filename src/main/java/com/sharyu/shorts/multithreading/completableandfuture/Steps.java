@@ -15,7 +15,7 @@ public class Steps {
 	}
 
 	public static boolean orderPlaced() {
-		log.info("Forcing the door...");
+		log.info("Placing the order...");
 		delay(2000);
 		log.info("Door unlocked!");
 		return true;

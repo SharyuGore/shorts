@@ -8,6 +8,21 @@ public class StringProblems {
 
 	}
 
+	private static void reverseString() {
+		char[] s = { 'h', 'e', 'l', 'l', 'o' };
+		int i=0; int j=s.length-1;
+		while(i<j) {
+			char tmp = s[i];
+			s[i] = s[j];
+			s[j] = tmp;
+			i++;j--;
+		}
+		System.out.println(new String(s));
+		
+	}
+	
+
+
 	private static void reverseInt() {
 		int test = 321;
 		String test1 = Integer.toString(test);
@@ -24,19 +39,6 @@ public class StringProblems {
 		
 		System.out.println(intdata.intValue());
 		
-		
-	}
-
-	private static void reverseString() {
-		char[] s = { 'h', 'e', 'l', 'l', 'o' };
-		int i=0; int j=s.length-1;
-		while(i<j) {
-			char tmp = s[i];
-			s[i] = s[j];
-			s[j] = tmp;
-			i++;j--;
-		}
-		System.out.println(new String(s));
 		
 	}
 
